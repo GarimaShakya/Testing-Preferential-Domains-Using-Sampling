@@ -10,7 +10,7 @@ import math
 import random
 import numpy as np
 from itertools import permutations
-#import matplotlib.pyplot as plt
+
 
 profile2 = [0]
 n = 10000
@@ -45,30 +45,7 @@ for i in range(0,len(e_a)):
 #print max_l
 
 all_profiles=[]
- 
-# 
-#t1=[]
-#t2=[]
-#t3=[]
-#
-#
-#for i in range(5,11):
-#    x=int((10*(i))*max_l[0]/100)
-#    t1.append(x)
 
-        
-#for i in range(1,11):
-#    x=int((10*(i))*max_l[1]/100)
-#    t2.append(x)
-#     
-#for i in range(1,11):
-#    x=int(((10*i))*max_l[2]/100) 
-#    t3.append(x)
-
-
-#l.append(t1)
-#l.append(t2)
-#l.append(t3)
 
 l=max_l
 print l
@@ -87,9 +64,7 @@ for i in range(0,len(e_a)):
 
     max_k.append(c)
 
-#print max_k
-#
-#
+
 k=[]
 
 t1=[]
@@ -130,11 +105,7 @@ for i in range(0,len(e_a)):
     
 print match, unmatch
 
-##
-##
-##
-##
-#
+
 #---------------------------------------------------------tester---------------------------------------------------------
 def tester(profile2,l2,k2):
     Q=[]
@@ -200,7 +171,7 @@ def tester(profile2,l2,k2):
         return 0
 ##---------------------------------------------------------tester completed---------------------------------------------------------
 
-#
+
 
 perm = []
 
@@ -260,17 +231,6 @@ f.write('n='+str(n)+'\n')
 f.write('delta='+str(delta)+'\n')
 f.write('m=' +str(m)+'\n')
 f.write('e_a=' +str(e_a)+'\n')
-#
-f.close()
-#  
-#
-#
-#
-#
-#
-#            
-#            
-#            
-#            
-            
+
+f.close()  
             
