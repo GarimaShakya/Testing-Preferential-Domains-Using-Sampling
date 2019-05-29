@@ -5,12 +5,6 @@ Created on Tue Aug 28 18:01:28 2018
 @author: garima
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 28 11:46:54 2018
-
-@author: garima
-"""
 
 
 import math
@@ -230,21 +224,7 @@ for q in range (0,10):
     mat3.append(float(match[2][q])/to_normalise) 
     mat4.append(float(match[3][q])/to_normalise)      
             
-            
- 
-
-
-
-
-           
-#print mat1,mat2,mat3,mat4   
-
-   
-            
-#x=[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
-
-#y_pos = np.arange(len(x))
-#y_pos = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
+      
 
 y=[]
 
@@ -252,11 +232,6 @@ y.append(mat1)
 y.append(mat2)
 y.append(mat3)
 y.append(mat4)
-
-#y1=mat1
-#y2=mat2
-#y3=mat3
-#y4=mat4
 
 
 f = open('thm1_profile2_normalized.txt','a') 
@@ -268,88 +243,6 @@ f.write('m=' +str(m)+'\n')
 f.write('e_v=' +str(e_v)+'\n')
 
 f.close()
-#f.write('---------------------------------------------------------'+'\n')
-#f.write('(e_v)          (l)           match[e_v][l]        unmatch[e_v][l]'+'\n')
-#f.write('---------------------------------------------------------'+'\n')
-
-#for r in range (0,len(e_v)):
-#    for q in range (0,len(l[r])):
-#        f.write( '(' + str('%0.2f' %  e_v[r] )  + ')  ,  ('+ str( l[r][q]) + ')  ,  (' + str( match[r][q] ) + ')  ,  ('+ str(unmatch[r][q] ) +'\n')          
-#            
-#
-#f.write('--------------------------------'+'\n')
-#f.write(str('%0.2f' % e_v[0]) +'     normalised ( number of times tester is correct)  '+str(mat1)+'\n')
-#f.write(str('%0.2f' % e_v[1])+'     normalised ( number of times tester is correct)  '+str(mat2)+'\n')
-#f.write(str('%0.2f' % e_v[2])+ '     normalised ( number of times tester is correct)  '+str(mat3)+'\n')
-#f.write(str('%0.2f' % e_v[3])+'     normalised ( number of times tester is correct)  '+str(mat4)+'\n')  
-#f.write('---------------------------------------------------------------------------------------------'+'\n'+'\n'+'\n')
-
- 
-
-#
-#
-##print(len(x))
-##print(len(y3))
-#
-#
-#
-#fig = plt.figure()
-#ax = fig.add_subplot(1, 1, 1)
-#
-#plt.axis([0, 1, -0.01, 1.1])
-#
-#ax.grid(which='both')
-#
-#
-#ax.grid(which='minor', alpha=0.2)
-#ax.grid(which='major', alpha=0.5)
-#
-#ga=str(e_v[0])
-#ga1=ga[0:5]
-#go=str(e_v[1])
-#go1=go[0:5]
-#ge=str(e_v[2])
-#ge1=ge[0:5]
-#
-#gi=str(e_v[3])
-#gi1=gi[0:5]
-#
-#
-#
-#
-#
-#plt.plot(x, y1, color='red',linestyle='-',label='e_v='+ga1)
-##plt.plot(x, y2, color='blue',linestyle='-',label ='e_v='+go1)
-##plt.plot(x, y3, 'm-',label ='e_v='+ge1)
-##plt.plot(x, y4,'c-',label ='e_v='+gi1)
-#
-#
-#plt.xlabel('#profiles='+ str(100) + ',class=2 , for each profile, each value of L is experimented 100 times,',fontsize=10)
-#plt.ylabel('probability of correctness of the tester',fontsize=10)
-#
-#plt.title('delta='+str(delta)+',n='+str(n)+'            ',fontsize=10)
-#plt.legend(loc='best')
-#
-#
-#plt.xticks(y_pos,x, rotation=90,fontsize=8)
-#
-#
-#
-#plt.grid(True,which="both",ls=":")
-#
-#
-#
-#plt.rcParams['figure.figsize']=(18,6)
-#
-#plt.savefig('theorem1_profile2_new(0.9)'+'.pdf')
-#plt.show()
-            
-
-
-
-
-
-            
             
             
             
